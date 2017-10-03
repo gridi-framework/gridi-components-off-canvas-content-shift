@@ -1,22 +1,20 @@
-@if $gridi-components-off-canvas-content-shift-generate-classes {
-    .off-canvas-content {
-        @include transform('translate(0, 0)');
-        @include include-off-canvas-transition-style();
+.off-canvas-content {
+    @include transform('translate(0, 0)');
+    @include include-off-canvas-transition-style();
 
-        &.off-canvas-content-shift-left {
-            @include include-off-canvas-content-shift-left-style();
-        }
+    &.off-canvas-content-shift-left {
+        @include include-off-canvas-content-shift-left-style();
+    }
 
-        &.off-canvas-content-shift-right {
-            @include include-off-canvas-content-shift-right-style();
-        }
-        
-        &.off-canvas-content-shift-top {
-            @include include-off-canvas-content-shift-top-style();
-        }
+    &.off-canvas-content-shift-right {
+        @include include-off-canvas-content-shift-right-style();
+    }
+    
+    &.off-canvas-content-shift-top {
+        @include include-off-canvas-content-shift-top-style();
+    }
 
-        &.off-canvas-content-shift-bottom {
-            @include include-off-canvas-content-shift-bottom-style();
-        }
+    &.off-canvas-content-shift-bottom {
+        @include include-off-canvas-content-shift-bottom-style();
     }
 }
